@@ -30,14 +30,14 @@ body {
     width: 90vw;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    row-gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
     padding: 20px;
 }
 
 .post {
-    width: 200px;
-    height: 200px;
+    width: 110px;
+    height: 110px;
     margin: auto;
     transition: .3s;
     cursor: pointer;
@@ -74,40 +74,36 @@ body {
 .close {
     display: block;
     position: absolute;
-    top: 50px;
-    right: 100px;
+    top: 30px;
+    right: 30px;
     color: red;
     cursor: pointer;
     font-size: 1.1rem;
 }
 
-@media screen and (max-width: 1080px) {
-    .content {
-        grid-template-columns: repeat(3, 1fr)
-    };
-}
-
-
-@media screen and (max-width: 720px) {
-    .content {
-        grid-template-columns: repeat(2, 1fr)
-    };
-}
-
-@media screen and (max-width: 514px) {
+@media screen and (min-width: 514px) {
     .post {
         width: 150px;
         height: 150px;
     }
+}
+
+@media screen and (min-width: 1080px) {
+    .content {
+        grid-template-columns: repeat(3, 1fr)
+    }
+    .post {
+        width: 200px;
+        height: 200px;
+    }
     .close {
-        top: 30px;
-        right: 30px;
+        top: 50px;
+        right: 100px;
     }
 }
 
-@media screen and (max-width: 364px) {
-    .post {
-        width: 110px;
-        height: 110px;
+@media screen and (min-width: 1280px) {
+    .content {
+        grid-template-columns: repeat(4, 1fr)
     }
 }
