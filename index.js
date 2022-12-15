@@ -22,10 +22,24 @@ function getTarget() {
             let card = postTarget(item.dataset.src);
             target.innerHTML = card;
             target.style.left = "0";
+            checkSize();
             closeTab();
         })
     })
 
+}
+
+function checkSize() {
+    const img = document.querySelector(".post-target img");
+    if(img.clientWidth >= img.clientHeight) {
+        if(document.body.clientWidth > 512) {
+            img.style.width = "40%";
+        }else {
+            img.style.width = "80%";
+        }
+    }else {
+        img.style.height = "90%";
+    }
 }
 
 function postImage(data) {
