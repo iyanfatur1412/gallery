@@ -30,12 +30,14 @@ body {
     width: 90vw;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 20px;
     padding: 20px;
 }
 
 .post {
+    width: 110px;
+    height: 110px;
     margin: auto;
     transition: .3s;
     cursor: pointer;
@@ -80,9 +82,6 @@ body {
 }
 
 @media screen and (min-width: 476px) {
-    .content {
-        grid-template-columns: 1fr 1fr;
-    }
     .post {
         width: 150px;
         height: 150px;

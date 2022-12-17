@@ -1,4 +1,4 @@
-let array = ["logo1", "logo2", "badge", "brosur", "logo3", "calendar-web", "logo4", "vexel-art", "logo5", "poster", "poster2", "poster-mockup", "poster2-mockup", "poster-web", "vexel-art2", "world-hand", "eri-chan", "isoplus"];
+let array = ["logo1", "logo2", "badge", "brosur", "logo3", "calendar-web", "logo4", "vexel-art", "logo5", "poster", "poster2", "poster-mockup", "poster2-mockup", "poster-web", "vexel-art2", "world-hand", "eri-chan", "isoplus", "logo7", "kemasan", "logo8"];
 const content = document.querySelector(".content");
 const target = document.querySelector(".target");
 
